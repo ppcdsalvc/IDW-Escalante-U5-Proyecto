@@ -4,8 +4,25 @@
   "description": "",
   "main": "usuarios.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "idw-escalante-u5-t01": "index.js"
+  },
+  "dependencies": {
+    "qr-image": "^3.2.0",
+    "qrcode": "^1.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppcdsalvc/IDW-Escalante-U5-Proyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ppcdsalvc/IDW-Escalante-U5-Proyecto/issues"
+  },
+  "homepage": "https://github.com/ppcdsalvc/IDW-Escalante-U5-Proyecto#readme"
 }
