@@ -47,6 +47,9 @@ $(function(){
               </button>`;
               return res
             }
+          },
+          {
+            data:'user.name'
           }
       ]
     });
@@ -59,6 +62,7 @@ function guardar(){
     var fecha = $('#txtFecha').val();
     var activo = $('#txtActivo').val();
     var foto = $('#txtFoto').val();
+    var identificador=$('#txtID').val();
 
     console.log(titulo);
     console.log(autor);
@@ -66,6 +70,8 @@ function guardar(){
     console.log(fecha);
     console.log(activo);
     console.log(foto);
+    console.log(identificador);
+
 
     $.ajax(
       {
@@ -77,7 +83,8 @@ function guardar(){
           nota:nota,
           fecha:fecha,
           activo:activo,
-          foto:foto
+          foto:foto,
+          user:identificador
         }
       }
     )
@@ -91,6 +98,8 @@ function guardar(){
         $('#txtFecha').val('');
         $('#txtActivo').val('');
         $('#txtFoto').val('');
+        $('#txtID').val('');
+
         
         $('#tbNoticia').dataTable().api().ajax.reload();
       }
