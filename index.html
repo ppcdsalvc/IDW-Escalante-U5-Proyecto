@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <link rel="stylesheet"  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet"  href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="usuarios.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+</head>
+<body >
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./noticia.html">Noticias</a>
+        </li>
+    
+</ul>    
+
+        <div class="card-body">
+        <center>
+            <br>
+            <br>
+            <form>
+                <div class="form-group row col-sm-6 ">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" id="txtNombre" name="txtNombre"placeholder="Ingresa tu nombre">
+                        </div>
+                </div>
+                <div class="form-group row col-sm-6 ">
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="ingresa tu email">
+                        </div>
+                      </div>
+                      <div class="form-group row col-sm-6 ">
+                        <div class="col-sm-12">
+                          <input type="password" class="form-control" id="txtPassword" nmae="txtPassword" placeholder="Password">
+                        </div>
+                      </div>                  
+                        <button type="button" onclick="guardar()"  class="btn btn-primary col-sm-5 col-xs-12" >Guardar</button>
+                 </form>       
+        </center>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="text-align:center;">
+        <div class="row" style="text-align:center;">
+            <form>
+            </form>
+        </div>
+        <div class="row" style="text-align:center;">
+            <table id="tbUsuarios" style="width:100%">
+                <thead>
+                    <tr align="center">
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
